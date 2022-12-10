@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет пользователя</title>
+    <link rel="shortcut icon" href="/img/log_t.png" type="image/png">
+    <link th:href="@{/css/css2.css}" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h3>Личный кабинет пользователя</h3>
+    <!--<a href="/logout">Выйти из личного кабинета</a>-->
+    <div class="blok2">
+        <form method="post" th:action="@{/logout}" class="form">
+            <input type="submit" value="Выйти из личного кабинета" class="btk">
+        </form>
+        <form method="get" th:action="@{/cart}" class="form1">
+            <input type="submit" value="Корзина" class="btk">
+        </form>
+        <form method="get" th:action="@{/orders}" class="form1">
+            <input type="submit" value="Заказы" class="btk">
+        </form>
+    </div>
+    <form th:method="POST" th:action="@{/product/search}" class="blok1">
+        <fieldset>
+            <legend>Выберите параметры для сортировки, поиска, фильтрации</legend>
+            <div class="div2">
+                <br>
+                <b><label for="search">Поиск по наименованию</label></b>
+                <br>
+                <input type="search" name="search"  th:value="*{value_search}" id="search">
+                <br>
+                <br>
+                <b><label for="ot">От</label></b>
+                <input type="text" name="ot"  th:value="*{value_price_ot}" id="ot">
+                <b><label>₽</label></b>
+                <br>
+                <b><label for="do">До</label></b>
+                <input type="text" name="do"  th:value="*{value_price_do}" id="do">
+                <b><label>₽</label></b>
+                <br>
+                <br>
+                <input type="radio" id="ascending_price" name="price" value="sorted_by_ascending_price">
+                <label for="ascending_price">Отсортировать по возрастанию цены</label>
+                <br>
+                <input type="radio" id="descending_price" name="price" value="sorted_by_descending_price">
+                <label for="descending_price">Отсортировать по убыванию цены</label>
+                <b><p>Категория товаров:</p></b>
+                <input type="radio" id="furniture" name="category" value="furniture">
+                <label for="furniture">Детская мебель</label>
+                <br>
+                <input type="radio" id="clothes" name="category" value="clothes">
+                <label for=clothes>Детская одежда</label>
+                <br>
+                <input type="radio" id="pushkit" name="category" value="pushkit">
+                <label for="pushkit">Игрушки</label>
+                <br>
+                <input type="radio" id="drogue" name="category" value="drogue">
+                <label for="drogue">Другое</label>
+                <br>
+                <br>
+                <input type="submit" value="Найти" class="btk3">
+            </div>
+        </fieldset>
+    </form>
+    <h3>Каталог товаров:</h3>
+    <center><div class="blok2">
+        <div th:each="product : ${products}" class="knop">
+            <img th:src="'/img/' + ${product.imageList[0].getFileName()}" width="97%">
+            <hr>
+            <a th:href="@{/product/info/{id}(id=${product.getId()})}" th:text="${product.getTitle()}" id="title"></a>
+            <p th:text="'Цена: ' + ${product.getPrice()}"></p>
+            <a th:href="@{/cart/add/{id}(id=${product.getId()})}">Добавить в корзину</a>
+        </div>
+    </div></center>
+</body>
+</html>

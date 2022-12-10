@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказы</title>
+    <link rel="shortcut icon" href="/img/log_t.png" type="image/png">
+    <link th:href="@{/css/css2.css}" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h3>Заказы</h3>
+<div class="blok2">
+    <button onclick="window.location.href = '/admin'" class="btk4">
+        Выйти в личный кабинет</button>
+</div>
+<center><div class="blok2">
+    <div th:each="order : ${orders}" class="knop">
+        <h4 th:text="'Заказ № ' + ${order.getNumber()}"></h4>
+        <img th:src="'/img/' + ${order.getProduct().imageList[0].getFileName()}" width="97%">
+        <br>
+        <p th:text="'Наименование: ' + ${order.getProduct().getTitle()}"></p>
+        <p th:text="'Количество: ' + ${order.getCount()}"></p>
+        <p th:text="'Цена: ' + ${order.getPrice()}"></p>
+        <p th:text="'Дата заказа: ' + ${#temporals.format(order.getDateTime(), 'dd-MMM-yyyy')}"></p>
+        <p th:text="'Статус: ' + ${order.getStatus()}"></p>
+    </div>
+</div></center>
+</body>
+</html>

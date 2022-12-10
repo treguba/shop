@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о товаре</title>
+    <link rel="shortcut icon" href="/img/log_t.png" type="image/png">
+    <link th:href="@{/css/css2.css}" type="text/css" rel="stylesheet">
+</head>
+    <body>
+        <button onclick="window.location.href = '/index';" class="btk1">
+            Выйти в личный кабинет
+        </button>
+        <div class="blok1">
+            <a class="zag">Информация о товаре:</a>
+            <div class="blok3">
+                <p th:text="'Наименование: ' + ${product.getTitle()}"></p>
+                <p th:text="'Описание: ' + ${product.getDescription()}"></p>
+                <p th:text="'Цена: ' + ${product.getPrice()}"></p>
+                <p th:text="'Склад: ' + ${product.getWarehouse()}"></p>
+                <p th:text="'Продавец: ' + ${product.getSeller()}"></p>
+                <p th:text="'Категория: ' + ${product.getCategory().getName()}"></p>
+            </div>
+        </div>
+        <div class="blok2">
+            <div th:each="img : ${product.getImageList()}" class="knop2">
+                <img th:src="'/img/' + ${img.getFileName()}" width="97%">
+            </div>
+        </div>
+    </body>
+</html>

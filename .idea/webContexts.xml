@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/shop/SpringSecurityApplication/src/main/resources/templates/admin/admin.html" value="file://$PROJECT_DIR$/shop/SpringSecurityApplication/src/main/resources/templates/admin" />
+        <entry key="file://$PROJECT_DIR$/shop/SpringSecurityApplication/src/main/resources/templates/login.html" value="file://$PROJECT_DIR$/shop/SpringSecurityApplication/src/main/resources/templates" />
+        <entry key="file://$PROJECT_DIR$/shop/SpringSecurityApplication/src/main/resources/templates/user/index.html" value="file://$PROJECT_DIR$/shop/SpringSecurityApplication/src/main/resources/templates/user" />
+      </map>
+    </option>
+  </component>
+</project>

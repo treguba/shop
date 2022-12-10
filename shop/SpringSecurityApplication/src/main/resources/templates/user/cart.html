@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <link rel="shortcut icon" href="/img/log_t.png" type="image/png">
+    <link th:href="@{/css/css2.css}" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h3>Корзина товаров</h3>
+<div class="blok2">
+    <button onclick="window.location.href = '/admin'" class="btk4">
+        Выйти в личный кабинет</button>
+</div>
+<center><div class="blok2">
+    <div th:each="product : ${cart_product}" class="knop">
+        <img th:src="'/img/' + ${product.imageList[0].getFileName()}" width="98%">
+        <br>
+        <br>
+        <a th:href="@{/product/info/{id}(id=${product.getId()})}" th:text="${product.getTitle()}"></a>
+        <p th:text="'Цена: ' + ${product.getPrice()}"></p>
+        <a th:href="@{/cart/delete/{id}(id=${product.getId()})}">Удалить</a>
+    </div>
+</div></center>
+<h3 th:text="'Итоговая цена: ' + ${price}"></h3>
+<div class="blok2">
+    <button onclick="window.location.href = '/order/create'" class="btk3">
+        Оформить и заказ</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+body
+{
+	background-image: url("../img/log3.jpg");
+}
+.blok1
+{
+	padding: 5px;
+	margin: 0.4% 0.4% 0.4% 0.4%;
+	width: 98.5%;
+	font-family: "Times New Roman";
+	font-size: 85%;
+	text-shadow: 2px 2px 2px grey;
+	background-color: rgb(182, 223, 143);
+	box-shadow: 3px 3px 6px black;
+	text-align: justify;
+}
+.blok2
+{
+	padding: 5px;
+	margin: 0.3% 0.3% 0.3% 0.3%;
+	width: 98.5%;
+	font-family: "Times New Roman";
+	color: rgb(0, 0, 0);
+	font-size: 85%;
+	text-shadow: 2px 2px 2px rgb(190, 49, 49);
+	background: linear-gradient(90deg, burlywood, pink, deepskyblue);
+	box-shadow: 3px 3px 6px black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: stretch;
+}
+
+.blok3
+{
+	padding: 10px;
+	margin: 0.3% 0.3% 0.3% 0.3%;
+	width: 97.5%;
+	font-family: "Times New Roman";
+	font-size: 80%;
+	text-shadow: 2px 2px 2px grey;
+	background-color: lightskyblue;
+	box-shadow: 3px 3px 6px black;
+	text-align: justify;
+	transition-duration: 4s;
+}
+	.blok3:hover
+	{
+		transform: scale(1.03);
+		background: lightpink;
+		box-shadow: 2px 2px 5px red;
+	}
+
+h3
+{
+	font-family: "Times New Roman";
+	font-size: 25px;
+	color: indigo;
+	text-shadow: 2px 2px 2px gold;
+	vertical-align: middle
+}
+
+.zag
+{
+	font-family: "Times New Roman";
+	font-size: 20px;
+	color: purple;
+	text-shadow: 2px 2px 2px gold;
+	vertical-align: middle
+}
+
+.knop
+{
+	background: repeating-radial-gradient(LightGray,LightSteelBlue,LightSkyBlue);
+	text-shadow: 2px 2px 2px black;
+	box-shadow: 2px 2px 5px black;
+	padding: 5px;
+	margin: 0.4% 0.4% 0.4% 0.4%;
+	width: 18%;
+	height: 30%;
+	word-break:break-all;
+	transition-duration: 3s;
+	font-family: "Times New Roman";
+
+}
+.knop:hover
+{
+	transform: scale(1.15);
+	background: yellow;
+	box-shadow: 2px 2px 5px red;
+}
+
+.form
+{
+	width: 40%;
+}
+
+.form1
+{
+	width: 20%;
+}
+
+.btk
+{
+	background: lime;
+	text-shadow: 2px 2px 2px black;
+	box-shadow: 2px 2px 5px grey;
+	width: 98%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+	padding: 5px;
+}
+
+.btk1
+{
+	background: lime;
+	text-shadow: 2px 2px 2px black;
+	box-shadow: 2px 2px 5px grey;
+	width: 15%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+	padding: 5px;
+}
+
+.btk4
+{
+	background: lime;
+	text-shadow: 2px 2px 2px black;
+	box-shadow: 2px 2px 5px grey;
+	width: 20%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+	padding: 5px;
+}
+
+.btk3
+{
+	background: peachpuff;
+	text-shadow: 2px 2px 2px black;
+	box-shadow: 2px 2px 5px grey;
+	width: 40%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+	padding: 5px;
+}
+
+.knop2
+{
+	background: repeating-radial-gradient(LightGray,LightSteelBlue,LightSkyBlue);
+	text-shadow: 2px 2px 2px black;
+	box-shadow: 2px 2px 5px black;
+	padding: 5px;
+	margin: 0.5% 1.2% 1.2% 0.5%;
+	width: 16.5%;
+	height: 30%;
+	word-break:break-all;
+	align-items: center;
+	transition-duration: 3s;
+	font-family: "Times New Roman";
+
+}
+.knop2:hover
+{
+	transform: scale(1.35);
+	background: yellow;
+	box-shadow: 2px 2px 5px red;
+}
+
+.knop3
+{
+	background: repeating-radial-gradient(LightGray,LightSteelBlue,LightSkyBlue);
+	text-shadow: 2px 2px 2px black;
+	box-shadow: 2px 2px 5px black;
+	padding: 5px;
+	margin: 0.4% 0.4% 0.4% 0.4%;
+	width: 31.5%;
+	height: 40%;
+	word-break:break-all;
+	transition-duration: 3s;
+	font-family: "Times New Roman";
+
+}
+.knop3:hover
+{
+	transform: scale(1.15);
+	background: yellow;
+	box-shadow: 2px 2px 5px red;
+}
+
+input[type="search"]
+{
+	background: bisque;
+	border: 3px solid darkorange;
+	margin: 0.3% 0.3% 0.3% 0.3%;
+	border-radius: 5px;
+	color: red;
+	font-family: "Times New Roman";
+	text-shadow: 2px 2px 2px grey;
+	font-size: 120%;
+	width: 90%;
+	height: 30%;
+}
+
+input[type="text"]
+{
+	background: bisque;
+	border: 3px solid darkorange;
+	margin: 0.3% 0.3% 0.3% 0.3%;
+	border-radius: 5px;
+	color: red;
+	font-family: "Times New Roman";
+	text-shadow: 2px 2px 2px grey;
+	font-size: 120%;
+	width: 35%;
+	height: 30%;
+}
+
+.div2
+{
+	width: 40%;
+	height: 90%;
+}

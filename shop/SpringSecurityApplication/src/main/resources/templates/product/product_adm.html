@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет администратора</title>
+    <link rel="shortcut icon" href="/img/log_t.png" type="image/png">
+    <link th:href="@{/css/css2.css}" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h3>Личный кабинет администратора</h3>
+    <div class="blok2">
+        <form method="post" th:action="@{/logout}" class="form">
+            <input type="submit" value="Выйти из личного кабинета" class="btk">
+        </form>
+        <div class="form">
+            <button onclick="window.location.href = '/admin/product/add/'" class="btk">
+                Добавить товар</button>
+        </div>
+    </div>
+    <form th:method="POST" th:action="@{/product/search}" class="blok1">
+        <fieldset>
+            <legend>Выберите параметры для сортировки, поиска, фильтрации</legend>
+            <div class="div2">
+                <br>
+                <b><label for="search">Поиск по наименованию</label></b>
+                <br>
+                <input type="search" name="search"  th:value="*{value_search}" id="search">
+                <br>
+                <br>
+                <b><label for="ot">От</label></b>
+                <input type="text" name="ot"  th:value="*{value_price_ot}" id="ot">
+                <b><label>₽</label></b>
+                <br>
+                <b><label for="do">До</label></b>
+                <input type="text" name="do"  th:value="*{value_price_do}" id="do">
+                <b><label>₽</label></b>
+                <br>
+                <br>
+                <input type="radio" id="ascending_price" name="price" value="sorted_by_ascending_price">
+                <label for="ascending_price">Отсортировать по возрастанию цены</label>
+                <br>
+                <input type="radio" id="descending_price" name="price" value="sorted_by_descending_price">
+                <label for="descending_price">Отсортировать по убыванию цены</label>
+                <b><p>Категория товаров:</p></b>
+                <input type="radio" id="furniture" name="category" value="furniture">
+                <label for="furniture">Детская мебель</label>
+                <br>
+                <input type="radio" id="clothes" name="category" value="clothes">
+                <label for=clothes>Детская одежда</label>
+                <br>
+                <input type="radio" id="pushkit" name="category" value="pushkit">
+                <label for="pushkit">Игрушки</label>
+                <br>
+                <input type="radio" id="drogue" name="category" value="drogue">
+                <label for="drogue">Другое</label>
+                <br>
+                <br>
+                <input type="submit" value="Найти" class="btk3">
+            </div>
+        </fieldset>
+    </form>
+    <h3>Результат: </h3>
+    <center><div class="blok2">
+        <div th:each="product : ${search_product}" class="knop3">
+            <img th:src="'/img/' + ${product.imageList[0].getFileName()}" width="98%">
+            <hr>
+            <p th:text="'Наименование: ' + ${product.getTitle()}"></p>
+            <p th:text="'Описание: ' + ${product.getDescription()}"></p>
+            <hr>
+            <p th:text="'Цена: ' + ${product.getPrice()}"></p>
+            <p th:text="'Склад: ' + ${product.getWarehouse()}"></p>
+            <p th:text="'Продавец: ' + ${product.getSeller()}"></p>
+            <p th:text="'Категория товара: ' + ${product.getCategory().getName()}"></p>
+            <hr>
+            <a th:href="@{/admin/product/edit/{id}(id=${product.getId()})}">Редактировать товар</a>
+            <a th:href="@{/admin/product/delete/{id}(id=${product.getId()})}">Удалить товар</a>
+        </div>
+    </div></center>
+    <br>
+    <h3>Каталог товаров:</h3>
+    <br>
+    <center><div class="blok2">
+        <div th:each="product : ${products}" class="knop3">
+            <img th:src="'/img/' + ${product.imageList[0].getFileName()}" width="98%">
+            <hr>
+            <p th:text="'Наименование: ' + ${product.getTitle()}"></p>
+            <p th:text="'Описание: ' + ${product.getDescription()}"></p>
+            <hr>
+            <p th:text="'Цена: ' + ${product.getPrice()}"></p>
+            <p th:text="'Склад: ' + ${product.getWarehouse()}"></p>
+            <p th:text="'Продавец: ' + ${product.getSeller()}"></p>
+            <p th:text="'Категория товара: ' + ${product.getCategory().getName()}"></p>
+            <hr>
+            <a th:href="@{/admin/product/edit/{id}(id=${product.getId()})}">Редактировать товар</a>
+            <a th:href="@{/admin/productadm/delete/{id}(id=${product.getId()})}">Удалить товар</a>
+        </div>
+    </div></center>
+</body>
+</html>

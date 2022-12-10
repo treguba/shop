@@ -1,0 +1,272 @@
+body
+{
+    background-image: url("../img/log5.jpg");
+}
+.blok1
+{
+    padding: 5px;
+    margin: 0.4% 0.4% 0.4% 0.4%;
+    width: 98.5%;
+    font-family: "Times New Roman";
+    font-size: 85%;
+    text-shadow: 2px 2px 2px grey;
+    background-color: rgb(182, 223, 143);
+    box-shadow: 3px 3px 6px black;
+    text-align: justify;
+}
+.blok2
+{
+    padding: 3px;
+    margin: 0.2% 0.2% 0.2% 0.2%;
+    width: 98%;
+    height: 40%;
+    font-family: "Times New Roman";
+    color: rgb(0, 0, 0);
+    font-size: 70%;
+    text-shadow: 2px 2px 2px rgb(190, 49, 49);
+    background: linear-gradient(90deg, burlywood, pink, deepskyblue);
+    box-shadow: 3px 3px 6px black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.blok3
+{
+    padding: 10px;
+    margin: 0.3% 0.3% 0.3% 0.3%;
+    width: 97.5%;
+    font-family: "Times New Roman";
+    font-size: 80%;
+    text-shadow: 2px 2px 2px grey;
+    background-color: lightskyblue;
+    box-shadow: 3px 3px 6px black;
+    text-align: justify;
+    transition-duration: 4s;
+}
+.blok3:hover
+{
+    transform: scale(1.03);
+    background: lightpink;
+    box-shadow: 2px 2px 5px red;
+}
+
+.blok4
+{
+    background: linear-gradient(90deg, orange,wheat,yellow);
+    padding: 5px;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    width: 70%;
+    height: 50%;
+    font-family: "Times New Roman";
+    font-size: 70%;
+    text-shadow: 2px 2px 2px grey;
+    box-shadow: 3px 3px 6px black;
+}
+
+h3
+{
+    font-family: "Times New Roman";
+    font-size: 25px;
+    color: purple;
+    text-shadow: 2px 2px 2px gold;
+    vertical-align: middle
+}
+
+.tex1
+{
+    cols: 98%;
+    row: 150px;
+    width: 98%;
+    height: 150px;
+    font-family: "Times New Roman";
+    border-radius: 10px;
+    color: black;
+    font-size: 100%;
+    text-shadow: 2px 2px 2px grey;
+    text-align: justify;
+}
+
+.tex3
+{
+    cols: 98%;
+    row: 100px;
+    width: 98%;
+    height: 100px;
+    font-family: "Times New Roman";
+    border-radius: 10px;
+    color: black;
+    font-size: 100%;
+    text-shadow: 2px 2px 2px grey;
+    text-align: justify;
+}
+
+.tex2
+{
+    cols: 98%;
+    row: 20%;
+    width: 98%;
+    height: 20%;
+    font-family: "Times New Roman";
+    border-radius: 10px;
+    color: black;
+    font-size: 100%;
+    text-shadow: 2px 2px 2px grey;
+    text-align: justify;
+}
+
+label
+{
+    font-family: "Times New Roman";
+    color: black;
+    font-size: 120%;
+    text-shadow: 2px 2px 2px grey;
+}
+
+input
+{
+    width: 98%;
+    height: 20px;
+    font-family: "Times New Roman";
+    border-radius: 10px;
+    color: black;
+    font-size: 100%;
+    text-shadow: 2px 2px 2px grey;
+}
+
+input :focus
+{
+    border: 5px solid orange;
+    outline: none;
+}
+
+input[type="submit"]
+{
+    background: gold;
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    color: darkblue;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 2px grey;
+    font-size: 100%;
+    width: 50%;
+    height: 10%;
+}
+
+input[type="submit"]:hover
+{
+    background: darkorange;
+}
+
+input[type="file"]
+{
+    background: bisque;
+    border: 1px solid darkorange;
+    margin: 0.3% 0.3% 0.3% 0.3%;
+    border-radius: 5px;
+    color: red;
+    font-family: "Times New Roman";
+    text-shadow: 2px 2px 2px grey;
+    font-size: 100%;
+    width: 18%;
+    height: 85%;
+}
+
+input[type="file"]:hover
+{
+    background: cornflowerblue;
+}
+
+select
+{
+    width: 98%;
+    height: 30px;
+    font-family: "Times New Roman";
+    border-radius: 10px;
+    color: black;
+    font-size: 100%;
+    text-shadow: 2px 2px 2px grey;
+}
+
+.zag
+{
+    font-family: "Times New Roman";
+    font-size: 20px;
+    color: blueviolet;
+    text-shadow: 2px 2px 2px red;
+    vertical-align: middle
+}
+
+.knop
+{
+    background: repeating-radial-gradient(LightGray,LightSteelBlue,LightSkyBlue);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 5px black;
+    padding: 5px;
+    margin: 0.4% 0.4% 0.4% 0.4%;
+    width: 18%;
+    height: 400px;
+    word-break:break-all;
+    transition-duration: 3s;
+    font-family: "Times New Roman";
+
+}
+.knop:hover
+{
+    transform: scale(1.15);
+    background: yellow;
+    box-shadow: 2px 2px 5px red;
+}
+
+.btk
+{
+    background: lime;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 5px grey;
+    width: 98%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    padding: 5px;
+}
+
+.btk3
+{
+    background: lime;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 5px grey;
+    width: 20%;
+    margin: 0.2% 0.2% 0.2% 0.2%;
+    padding: 2px;
+}
+
+.btk1
+{
+    background: lime;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 5px grey;
+    width: 15%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    padding: 5px;
+}
+
+.knop2
+{
+    background: repeating-radial-gradient(LightGray,LightSteelBlue,LightSkyBlue);
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 5px black;
+    padding: 5px;
+    margin: 0.5% 1.2% 1.2% 0.5%;
+    width: 16.5%;
+    height: 30%;
+    word-break:break-all;
+    align-items: center;
+    transition-duration: 3s;
+    font-family: "Times New Roman";
+
+}
+.knop2:hover
+{
+    transform: scale(1.35);
+    background: yellow;
+    box-shadow: 2px 2px 5px red;
+}

@@ -1,0 +1,120 @@
+.bgimg 
+{
+	background-image: url("../img/log4.jpg");
+}
+div
+{
+	padding: 0.5%;
+	margin: 0.5% 0.5% 0.5% 0.5%;
+	width: 98%;
+	font-family: "Times New Roman";
+    font-size: 90%;
+	text-shadow: 2px 2px 2px grey;
+	text-align: justify;
+    background-color: bisque;
+	border-radius: 10px;
+    box-shadow: 3px 3px 6px mediumblue;
+	opacity: 0.9;
+    align-items: center;
+}
+
+.img
+{
+	background-image: url("../img/log_m.png");
+	padding: 0%;
+	margin: 0% 0% 0% 0%;
+	width: 30%;
+	height: 5%;
+	opacity: 0.9;
+	align-items: center;
+}
+.round {
+	border-radius: 30px;
+	box-shadow: 0 0 0 3px white;
+}
+
+.avtor
+{
+	padding: 5px;
+	margin: 1% 1% 1% 1%;
+	width: 40%;
+	font-family: "Times New Roman";
+    font-size: 100%;
+	text-shadow: 2px 2px 2px grey;
+    background-color: bisque;
+	border-radius: 10px;
+    box-shadow: 3px 3px 6px yellow;
+    align-items: center;
+}
+
+h1
+{
+    font-family: "Times New Roman";
+    font-size: 20px;
+	color: blue;
+	text-shadow: 5px 5px 5px yellow;
+    vertical-align: middle
+}
+h2
+{
+    font-family: "Times New Roman";
+    font-size: 15px;
+	color: green;
+	text-shadow: 5px 5px 5px yellow;
+    vertical-align: middle
+}
+
+h3
+{
+    font-family: "Times New Roman";
+    font-size: 120%;
+	color: blueviolet;
+	text-shadow: 5px 5px 5px yellow;
+}
+
+#cn1 form input[type="text"]:focus,
+#cn1 form input[type="password"]:focus
+{
+	border: 5px solid blue;
+	outline: none;
+}
+
+#cn1 form input[type="submit"]:hover
+{
+	background: darkorange;
+}
+
+li
+{
+    list-style: none;
+    font-style: italic;
+}
+
+.btk
+{
+    background: lime;
+    text-shadow: 2px 2px 2px gray;
+	font-weight: bold;
+	font-size: 60%;
+	box-shadow: 2px 2px 5px black;
+	border-radius: 10px;
+    width: 50%;
+    margin: 0.5% 0.5% 0.5% 0.5%;
+    padding: 5px;
+}
+	.btk:hover
+	{
+		background: Orange;
+	}
+	
+.pol
+{
+	background: LightYellow;
+    text-shadow: 2px 2px 2px darkmagenta;
+	font-weight: bold;
+	box-shadow: 2px 2px 5px greenyellow;
+	border-radius: 10px;
+    width: 90%;
+    margin: 0.1% 0.1% 0.1% 0.1%;
+    padding: 5px;
+}
